@@ -1,0 +1,141 @@
+<html>
+<head>
+    
+    <!---   javascript code for adding photos
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var text = "";
+var str="<tr>";
+    var i;
+    for (i = 10; i < 39; i++) {
+
+        text += "&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;images/art"+ i + ".jpg&quot; rel=&quot;lightbox[slide]&quot; caption=&quot;&quot;&gt;&lt;img class=&quot;picture&quot; src=&quot;images/art"+i+".jpg&quot;/&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+------>
+    <!photo engine---------------->
+    <link rel="stylesheet" href="backbox.css" type="text/css" />
+<script type="text/javascript" src="js/prototype.compressed.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<script type="text/javascript" src="js/dhtmlHistory.js"></script>
+<script type="text/javascript" src="js/customsignsheader.js"></script>
+    <!photo engine end------------>
+<style>
+    a { color:#CCCCCC;text-decoration: none;}
+ 
+a:hover {
+color: #b3b3b3;
+}
+
+    body {
+        margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color:beige;
+}
+.picture {
+    width:300px;
+
+
+} 
+</style>
+</head>
+<body>
+<br> <p align="center"><font size="13">  Sivan Black-Rotchin<br>
+SBR ART
+    </font></p>
+     <div onclick="dhtmlHistory.add('location1',{message: 'backbox'});countdown()">
+ <table width=30% align="center" style="font-size:18;">
+     <tr>
+    <td> <a href="mainpage.html" style="color:black;">Home</a></td>
+    <td> <a href="about.html">About</a></td>
+    <td> <a href="contact.html">Contact</a></td>
+         </tr>
+     </table>
+    <br><br><br>
+    <table><tr><td valign="top">
+    <table id="table_left" cellpadding="3">
+	<tr><td>
+        <a href="images/art1.jpg" rel="lightbox[slide]" caption="">
+    <img class="picture" src="images/art1.jpg"/> </a>
+        </td></tr>
+		<tr><td>  <a href="images/art2.jpg" rel="lightbox[slide]" caption="">
+    <img class="picture" src="images/art2.jpg" />
+        </a></td></tr>
+        <tr><td>  <a href="images/art3.jpg" rel="lightbox[slide]" caption="">
+    <img class="picture" src="images/art3.jpg" />
+        </a></td></tr>
+	
+	<tr><td><a href="images/art4.jpg" rel="lightbox[slide]" caption="">
+    <img class="picture" src="images/art4.jpg" />
+        </a></td></tr>
+		<tr><td><a href="images/art5.jpg" rel="lightbox[slide]" caption="">
+    <img class="picture" src="images/art5.jpg" />
+        </a></td></tr>
+	<tr>	<td><a href="images/art6.jpg" rel="lightbox[slide]" caption="">
+    <img class="picture" src="images/art6.jpg" />
+        </a></td></tr>
+        
+	<tr><td><a href="images/art7.jpg" rel="lightbox[slide]" caption="">
+    <img class="picture" src="images/art7.jpg" />
+        </a></td></tr>
+		<tr><td><a href="images/art8.jpg" rel="lightbox[slide]" caption="">
+    <img class="picture" src="images/art8.jpg" />
+        </a></td></tr>
+	<tr>	<td><a href="images/art9.jpg" rel="lightbox[slide]" caption="">
+    <img class="picture" src="images/art9.jpg" />
+        </a></td></tr>
+<tr><td><a href="images/art10.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art10.jpg"/></a></td></tr>
+<tr><td><a href="images/art11.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art11.jpg"/></a></td></tr>
+<tr><td><a href="images/art12.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art12.jpg"/></a></td></tr>
+        <tr><td><a href="images/art13.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art13.jpg"/></a></td></tr>
+<tr><td><a href="images/art14.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art14.jpg"/></a></td></tr>
+
+
+        </table>
+        </td>
+        <td valign="top">
+        <table id="table_center" cellpadding="3">
+	<tr><td><a href="images/art15.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art15.jpg"/></a></td></tr>
+<tr><td><a href="images/art16.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art16.jpg"/></a></td></tr>
+<tr><td><a href="images/art17.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art17.jpg"/></a></td></tr>
+<tr><td><a href="images/art18.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art18.jpg"/></a></td></tr>
+<tr><td><a href="images/art19.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art19.jpg"/></a></td></tr>
+<tr><td><a href="images/art20.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art20.jpg"/></a></td></tr>
+<tr><td><a href="images/art21.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art21.jpg"/></a></td></tr>
+<tr><td><a href="images/art22.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art22.jpg"/></a></td></tr>
+<tr><td><a href="images/art23.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art23.jpg"/></a></td></tr>
+<tr><td><a href="images/art24.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art24.jpg"/></a></td></tr>
+<tr><td><a href="images/art25.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art25.jpg"/></a></td></tr>
+<tr><td><a href="images/art26.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art26.jpg"/></a></td></tr>
+          </table>  </td>
+        <td valign="top">
+            <table id="table_right" cellpadding="3">
+            <tr><td><a href="images/art27.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art27.jpg"/></a></td></tr>
+<tr><td><a href="images/art28.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art28.jpg"/></a></td></tr>
+<tr><td><a href="images/art29.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art29.jpg"/></a></td></tr>
+<tr><td><a href="images/art30.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art30.jpg"/></a></td></tr>
+<tr><td><a href="images/art31.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art31.jpg"/></a></td></tr>
+<tr><td><a href="images/art32.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art32.jpg"/></a></td></tr>
+<tr><td><a href="images/art33.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art33.jpg"/></a></td></tr>
+<tr><td><a href="images/art34.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art34.jpg"/></a></td></tr>
+<tr><td><a href="images/art35.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art35.jpg"/></a></td></tr>
+<tr><td><a href="images/art36.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art36.jpg"/></a></td></tr>
+<tr><td><a href="images/art37.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art37.jpg"/></a></td></tr>
+<tr><td><a href="images/art38.jpg" rel="lightbox[slide]" caption=""><img class="picture" src="images/art38.jpg"/></a></td></tr>
+</table></td></table>
+    </div>
+
+
+    <script type="text/javascript" src="js/customsignsfooter.js"></script>
+  
+</body></html>
