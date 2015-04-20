@@ -1,0 +1,26 @@
+h1,h2,h3,h4,h5,h6,body {
+    font-family: 'Trocchi', serif;
+}
+
+.slider-image {
+    overflow: hidden;
+    height: 210px;
+}
+
+/*.slider-image img.wide {
+    max-width: 100%;
+    max-height: 100%;
+}
+.slider-image img.tall {
+    max-height: 100%;
+    max-width: 100%;
+}​*/
+
+/*img.slider {
+    display: block;
+    max-width:294px;
+    max-height:220px;
+    width: auto;
+    height: auto;
+    clip: rect(0px,294px,220px,0px);
+}*/
