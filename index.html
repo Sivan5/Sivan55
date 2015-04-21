@@ -57,6 +57,7 @@
         .galim {
                 padding: 3px;
                 padding-top: 6px;
+                width: 100%;
         }
 
         .gallink {
@@ -124,7 +125,7 @@
 
       <div class="row">
         <hr><a id="about"></a>
-        <div class="large-8 columns">
+        <div class="large-8 columns"> <!-- panel? -->
           <h4>About</h4> 
           <p>Hi! My name is Sivan. I like painting psychadelic designs on faux-leather accessories and clothes. Sometimes I paint on canvases as well. Everything I create is unique and hand-made. No two works are the same. Enjoy!</p>
           
@@ -286,7 +287,7 @@
         </div>
     </div>
 
-      <div class="row"><a id="contact"></a>
+      <div class="row"> <a id="contact"></a>
         <div class="large-12 columns">
           <hr>
           <h4>Contact</h4>
@@ -374,17 +375,23 @@
         <script type="text/javascript"> // scroll fcn
 
     function scroll(anchor) {
-    var a = document.getElementById(anchor).getBoundingClientRect().top;
+    if( anchor === 'contact'){ // dirty fix for to bottom scroll that was broken by hidden foundation content
+        var body = document.body,
+            html = document.documentElement;
+
+        var a = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+    } else {
+        var a = document.getElementById(anchor).getBoundingClientRect().top;
+    }
     const scrollHeight = a,
           scrollStep = Math.PI / ( 800 / 15 ),
           cosParameter = scrollHeight / 2;
-    console.log(a);
     var scrollCount = 0,
         scrollMargin,
         scrollInterval = setInterval( function() {
             if ( scrollCount <= 50 ) {
                 scrollCount = scrollCount + 1;  
-                console.log(scrollCount);
                 scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
                 window.scrollTo( 0, (scrollMargin) );
             } 
